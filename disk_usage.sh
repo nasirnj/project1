@@ -4,5 +4,4 @@ echo ""
 echo ""
 df -h 
 echo ""
-echo ""
 
