@@ -1,0 +1,11 @@
+---
+- name: Patching all the nodes from the inventory
+  hosts: all
+  tasks:
+    - name: installing patches
+      yum:
+        name: "*"
+        state: latest
+
+    - name: Rebooting the nodes post patching
+      shell: "init 6"
