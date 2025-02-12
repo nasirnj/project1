@@ -6,3 +6,7 @@
       yum:
         name: telnet
         state: present
+
+    - name: Print I LOVE LINUX on CLI
+      debug: 
+        msg: I LOVE LINUX
