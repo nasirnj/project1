@@ -1,0 +1,8 @@
+---
+- name: installing telnet on all nodes
+  hosts: app
+  tasks:
+    - name: Installing telnet
+      yum:
+        name: telnet
+        state: present
